@@ -1,4 +1,7 @@
-@import "reset";
+@import "config/reset";
+@import "config/style";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "modules/messages";
+@import "messages/header";
+@import "messages/footer";
+@import "messages/top_main";
