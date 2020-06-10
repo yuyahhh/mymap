@@ -88,95 +88,45 @@
 }
 
 
-.nav{
-  font-size: 14px;
-  display: flex;
-  margin-bottom: 10px;
-}  
-
-.listsLeft{
-  display: flex;
-  align-items: center;
-  color: #333;
-  text-decoration: none;
-  line-height: 32px;
-  
-  #catBtn{
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    line-height: 32px;
-    padding-right: 10px;
-    position: relative;
-  }
-
-  #brandBtn{
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    line-height: 32px;
-    padding-right: 10px;
-    position: relative;
-  }
-
-  .categoriesss{
-    color: #333;
-    display: flex;
-    line-height: 38px;
-    margin-right: 15px;
-    font-weight: bold;
-  }
-  
-  .brandsss{
-    color: #333;
-    display: flex;
-    line-height: 38px;
-    margin-right: 15px;
-    font-weight: bold;
-  }
-
-  .h-n-l_icon{
-    margin: 2px 5px 0 0;
-    font-size: 15px;
-    color: #3ccace;
-  }
-}
-
-
-.listsRight {
+.listsRight{
   margin-left: auto;
   display: flex;
   li{
+    color: #333;
     line-height: 38px;
+    padding: 0 0 0 15px;
   }
+  a{
     color: inherit;
     text-decoration: none;
+  }
   &__login{
-    background-color: rgb(255, 255, 255);
-    color: rgb(234, 53, 45);
-    display: block;
-    font-size: 14px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(234, 53, 45);
-    border-image: initial;
-    border-radius: 4px;
-    padding: 0px 10px;
-    transition: all 0.3s ease-out 0s;
-    margin-right: 20px;
+    a{
+      background-color: rgb(255, 255, 255);
+      color: rgb(234, 53, 45);
+      display: block;
+      font-size: 14px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(234, 53, 45);
+      border-image: initial;
+      border-radius: 4px;
+      padding: 0px 10px;
+      transition: all 0.3s ease-out 0s;
+    }
   }
   &__new{
-    background-color:rgb(234, 53, 45);
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 14px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(234, 53, 45);
-    border-image: initial;
-    border-radius: 4px;
-    padding: 0px 10px;
+    a{
+      background-color:rgb(234, 53, 45);
+      color: rgb(255, 255, 255);
+      display: block;
+      font-size: 14px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(234, 53, 45);
+      border-image: initial;
+      border-radius: 4px;
+      padding: 0px 10px;
+    }
   }
 }

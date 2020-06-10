@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'users/create'
+
   devise_for :users
-  get 'messages/index'
 
   root "messages#index"
 end
