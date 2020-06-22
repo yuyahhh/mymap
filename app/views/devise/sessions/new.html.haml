@@ -1,0 +1,36 @@
+%body.show
+  .header
+    .header__logo-box
+      =link_to root_path do
+        = image_tag "logo.png"
+  .login-main
+    .login-panel
+      .login-no-account
+        %p アカウントをお持ちでない方はこちら
+        = link_to new_user_registration_path do
+          新規会員登録
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .login-form-inner
+          .form-group
+            = f.email_field :email, placeholder: "メールアドレス", class: "login-input-text", value:"", autofocus: true
+          .form-group
+            = f.password_field :password, placeholder: "パスワード", class: "login-input-text", autocomplete: "off"
+          = f.submit "ログイン", class: "login-submit"
+          =link_to '#' do
+            パスワードをお忘れの方
+  %footer.single-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to '#' do
+            プライバシーポリシー
+        %li
+          = link_to '#' do
+            フリマ利用規約
+        %li
+          = link_to '#' do
+            特定商取引に関する表記
+    .footer__logo
+      = link_to root_path do
+        = image_tag 'logo.png'
+    %p © FURIMA
